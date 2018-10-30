@@ -94,7 +94,3 @@ Audit done.
 Checkstyle ends with 27 errors.
 Starting audit...
 Audit done.
-Starting audit...
-[ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M2\2.1 CC_Percolation\SolutionPP.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-Audit done.
-Checkstyle ends with 1 errors.
