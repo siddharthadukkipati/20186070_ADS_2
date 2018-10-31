@@ -1,35 +1,31 @@
-// import java.util.Scanner;
-// public final class Solution {
-//     private Solution() {
-//         //unused constructor.
-//     }
-//     public static void main(final String[] args) {
-//         Scanner sc = new Scanner(System.in);
-//         int vertices = Integer.parseInt(sc.nextLine());
-//         int edges = Integer.parseInt(sc.nextLine());
-//         Digraph digraph = new Digraph(vertices);
-//         while (sc.hasNext()) {
-//             String[] input = sc.nextLine().split(" ");
-//             digraph.addEdge(Integer.parseInt(input[0]),
-//                             Integer.parseInt(input[1]));
-//         }
-//         DirectedCycle directedcycle = new DirectedCycle(digraph);
-//         System.out.println(directedcycle);
-//     }
-// }
+/**
+ * { item_description }.
+ */
 import java.util.*;
-public class Solution {
+/**
+ * Class for solution.
+ */
+public final class Solution {
+    /**
+     * Constructs the object.
+     */
     Solution() {
         //unused..
     }
-    public static void main(String[] args) {
+    /**
+     * { function_description }.
+     *
+     * @param      args  The arguments
+     */
+    public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
         int vertices = Integer.parseInt(scan.nextLine());
         int edges = Integer.parseInt(scan.nextLine());
         Digraph digraphObject = new Digraph(vertices);
-        while(scan.hasNext()) {
+        while (scan.hasNext()) {
             String[] data = scan.nextLine().split(" ");
-            digraphObject.addEdge(Integer.parseInt(data[0]), Integer.parseInt(data[1]));
+            digraphObject.addEdge(Integer.parseInt(data[0]),
+                Integer.parseInt(data[1]));
         }
         DirectedCycle directedCycleObj;
         directedCycleObj = new DirectedCycle(digraphObject);
