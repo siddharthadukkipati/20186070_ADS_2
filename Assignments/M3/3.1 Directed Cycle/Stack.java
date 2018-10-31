@@ -1,119 +1,92 @@
-/*************************************************************************
- *  Compilation:  javac Stack.java
- *  Execution:    java Stack < input.txt
- *
- *  A generic stack, implemented using a linked list. Each stack
- *  element is of type Item.
- *  % more tobe.txt
- *  to be or not to - be - - that - - - is
- *
- *  % java Stack < tobe.txt
- *  to be not that or be (2 left on stack)
- *
- *************************************************************************/
-
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 
-
 /**
- *  The <tt>Stack</tt> class represents a last-in-first-out (LIFO) stack
- *  of generic items.
- *  It supports the usual <em>push</em> and <em>pop</em> operations, along
- *  with methods
- *  for peeking at the top item, testing if the stack is empty, and
- *  iterating through
- *  the items in LIFO order.
- *  <p>
- *  All stack operations except iteration are constant time.
- *  <p>
- *  For additional documentation, see <a href="/algs4/13stacks">Section
- *  1.3</a> of
- *  <i>Algorithms, 4th Edition</i> by Robert Sedgewick and Kevin Wayne.
- *@return dsc.
- *@param item items.
+ * List of Stack.
+ *
+ * @param      <Item>  The item
  */
 public class Stack<Item> implements Iterable<Item> {
     /**
-     * { var_description }.
+     * {size of the stack}.
      */
-    private int Num;          // size of the stack
+    private int n;
     /**
-     * { var_description }.
+     * {top of stack}.
      */
-    private Node first;     // top of stack
+    private Node first;
 
     /**
-     * Class for node.
+     * helper linked list class.
      */
     private class Node {
         /**
-         * { var_description }.
+         * {Item}.
          */
         private Item item;
         /**
-         * { var_description }.
+         * {Next of type node}.
          */
         private Node next;
     }
 
-   /**
+    /**
      * Create an empty stack.
      */
     public Stack() {
         first = null;
-        Num = 0;
+        n = 0;
     }
 
-   /**
-    * Determines if empty.
-    *
-    * @return     True if empty, False otherwise.
-    */
+    /**
+     * Is the stack empty?
+     * @return     {Boolean}.
+     */
     public boolean isEmpty() {
         return first == null;
     }
+
     /**
-     * { function_description }.
-     *
-     * @return     { description_of_the_return_value }
+     * Return the number of items in the stack.
+     * @return     {Integer}.
      */
     public int size() {
-        return Num;
+        return n;
     }
 
-   /**
-    * { function_description }.
-    *
-    * @param      item  The item
-    */
+    /**
+     * {Method to push into a stack}.
+     *
+     * @param      item  The item
+     */
     public void push(final Item item) {
         Node oldfirst = first;
         first = new Node();
         first.item = item;
         first.next = oldfirst;
-        Num++;
+        n++;
     }
+
     /**
-     * { function_description }.
      * Delete and return the item most recently added to the stack.
-     * Throw an exception if no such item exists because
-     * the stack is empty.
-     * @return     { description_of_the_return_value }
+     * Throw an exception if no such item exists because the stack is empty.
+     * @return      {Item}
      */
     public Item pop() {
         if (isEmpty()) {
             throw new RuntimeException("Stack underflow");
         }
-        Item item = first.item;        // save item to return
-        first = first.next;            // delete first node
-        Num--;
-        return item;                   // return the saved item
+        Item item = first.item;
+        first = first.next;
+        n--;
+        return item;
     }
+
+
     /**
-     * { function_description }.
-     *
-     * @return     { description_of_the_return_value }
+     * Return the item most recently added to the stack.
+     * Throw an exception if no such item exists because the stack is empty.
+     * @return      {Item}
      */
     public Item peek() {
         if (isEmpty()) {
@@ -121,10 +94,10 @@ public class Stack<Item> implements Iterable<Item> {
         }
         return first.item;
     }
+
     /**
-     * Returns a string representation of the object.
-     *
-     * @return     String representation of the object.
+     * Return string representation.
+     * @return     {String}.
      */
     public String toString() {
         StringBuilder s = new StringBuilder();
@@ -133,24 +106,24 @@ public class Stack<Item> implements Iterable<Item> {
         }
         return s.toString();
     }
+
+
     /**
-     * { function_description }
-     * * Return an iterator to the stack that iterates through
-     * the items in LIFO order.
-     *
-     * @return     { description_of_the_return_value }
+     * Return an iterator to the stack.
+     * that iterates through the items in LIFO order.
+     * @return     {Iterator}.
      */
     public Iterator<Item> iterator() {
         return new ListIterator();
     }
 
-    // an iterator, doesn't implement remove() since it's optional
     /**
      * Class for list iterator.
+     * an iterator, doesn't implement remove() since it's optional.
      */
     private class ListIterator implements Iterator<Item> {
         /**
-         * { var_description }.
+         * {Current Node}.
          */
         private Node current = first;
         /**
@@ -158,19 +131,19 @@ public class Stack<Item> implements Iterable<Item> {
          *
          * @return     True if has next, False otherwise.
          */
-        public boolean hasNext()  {
+        public boolean hasNext() {
             return current != null;
         }
         /**
-         * { function_description }.
+         * {Method to remove}.
          */
-        public void remove()      {
+        public void remove() {
             throw new UnsupportedOperationException();
         }
         /**
-         * { function_description }.
+         * {Method for next}.
          *
-         * @return     { description_of_the_return_value }
+         * @return     {Item}
          */
         public Item next() {
             if (!hasNext()) {
@@ -182,3 +155,5 @@ public class Stack<Item> implements Iterable<Item> {
         }
     }
 }
+
+

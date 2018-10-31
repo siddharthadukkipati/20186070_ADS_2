@@ -1,85 +1,18 @@
 Starting audit...
 [ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M3\3.1 Directed Cycle\Bag.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M3\3.1 Directed Cycle\Bag.java:13: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M3\3.1 Directed Cycle\Bag.java:14: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M3\3.1 Directed Cycle\Bag.java:17: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M3\3.1 Directed Cycle\Bag.java:18: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M3\3.1 Directed Cycle\Bag.java:20: Line is longer than 80 characters (found 105). [LineLength]
-[ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M3\3.1 Directed Cycle\Bag.java:23: Type Javadoc comment is missing @param <Item> tag. [JavadocType]
-[ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M3\3.1 Directed Cycle\Bag.java:24:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M3\3.1 Directed Cycle\Bag.java:24:17: Name 'N' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
-[ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M3\3.1 Directed Cycle\Bag.java:25:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M3\3.1 Directed Cycle\Bag.java:28: Missing a Javadoc comment. [JavadocType]
-[ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M3\3.1 Directed Cycle\Bag.java:29:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M3\3.1 Directed Cycle\Bag.java:30:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M3\3.1 Directed Cycle\Bag.java:44: Expected @return tag. [JavadocMethod]
-[ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M3\3.1 Directed Cycle\Bag.java:51: Expected @return tag. [JavadocMethod]
-[ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M3\3.1 Directed Cycle\Bag.java:58:21: Parameter item should be final. [FinalParameters]
-[ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M3\3.1 Directed Cycle\Bag.java:58:26: Expected @param tag for 'item'. [JavadocMethod]
-[ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M3\3.1 Directed Cycle\Bag.java:70: Expected @return tag. [JavadocMethod]
-[ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M3\3.1 Directed Cycle\Bag.java:71: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M3\3.1 Directed Cycle\Bag.java:75: Missing a Javadoc comment. [JavadocType]
-[ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M3\3.1 Directed Cycle\Bag.java:76:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M3\3.1 Directed Cycle\Bag.java:78: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M3\3.1 Directed Cycle\Bag.java:78:35: '{' at column 35 should have line break after. [LeftCurly]
-[ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M3\3.1 Directed Cycle\Bag.java:79: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M3\3.1 Directed Cycle\Bag.java:79:35: '{' at column 35 should have line break after. [LeftCurly]
-[ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M3\3.1 Directed Cycle\Bag.java:81:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M3\3.1 Directed Cycle\Bag.java:82: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M3\3.1 Directed Cycle\Bag.java:84: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 28 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M3\3.1 Directed Cycle\Digraph.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M3\3.1 Directed Cycle\Digraph.java:1:8: Unused import - java.util.NoSuchElementException. [UnusedImports]
-[ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M3\3.1 Directed Cycle\Digraph.java:13:23: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
-[ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M3\3.1 Directed Cycle\Digraph.java:17:17: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
-[ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M3\3.1 Directed Cycle\Digraph.java:33:30: 'V' hides a field. [HiddenField]
-[ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M3\3.1 Directed Cycle\Digraph.java:33:30: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M3\3.1 Directed Cycle\Digraph.java:36:13: '(' should be on the previous line. [MethodParamPad]
-[ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M3\3.1 Directed Cycle\Digraph.java:53:34: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M3\3.1 Directed Cycle\Digraph.java:56: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M3\3.1 Directed Cycle\Digraph.java:74:16: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
-[ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M3\3.1 Directed Cycle\Digraph.java:83:16: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
-[ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M3\3.1 Directed Cycle\Digraph.java:94: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M3\3.1 Directed Cycle\Digraph.java:168: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M3\3.1 Directed Cycle\Digraph.java:168: Line is longer than 80 characters (found 95). [LineLength]
 Audit done.
-Checkstyle ends with 14 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
-[ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M3\3.1 Directed Cycle\DirectedCycle.java:23: Line is longer than 80 characters (found 82). [LineLength]
-[ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M3\3.1 Directed Cycle\DirectedCycle.java:121: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M3\3.1 Directed Cycle\DirectedCycle.java:130: Line is longer than 80 characters (found 85). [LineLength]
-[ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M3\3.1 Directed Cycle\DirectedCycle.java:146:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M3\3.1 Directed Cycle\DirectedCycle.java:147:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M3\3.1 Directed Cycle\DirectedCycle.java:148:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M3\3.1 Directed Cycle\DirectedCycle.java:149: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M3\3.1 Directed Cycle\DirectedCycle.java:149:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M3\3.1 Directed Cycle\DirectedCycle.java:156:26: Parameter G should be final. [FinalParameters]
-[ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M3\3.1 Directed Cycle\DirectedCycle.java:156:34: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M3\3.1 Directed Cycle\DirectedCycle.java:160: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M3\3.1 Directed Cycle\DirectedCycle.java:161: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M3\3.1 Directed Cycle\DirectedCycle.java:164: Line is longer than 80 characters (found 91). [LineLength]
-[ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M3\3.1 Directed Cycle\DirectedCycle.java:165:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M3\3.1 Directed Cycle\DirectedCycle.java:165:22: Parameter G should be final. [FinalParameters]
-[ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M3\3.1 Directed Cycle\DirectedCycle.java:165:30: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M3\3.1 Directed Cycle\DirectedCycle.java:165:33: Parameter v should be final. [FinalParameters]
-[ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M3\3.1 Directed Cycle\DirectedCycle.java:171: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M3\3.1 Directed Cycle\DirectedCycle.java:177:13: '}' at column 13 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
-[ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M3\3.1 Directed Cycle\DirectedCycle.java:195: Line is longer than 80 characters (found 88). [LineLength]
-[ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M3\3.1 Directed Cycle\DirectedCycle.java:202: Line is longer than 80 characters (found 96). [LineLength]
-[ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M3\3.1 Directed Cycle\DirectedCycle.java:203: Line is longer than 80 characters (found 85). [LineLength]
-[ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M3\3.1 Directed Cycle\DirectedCycle.java:212:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M3\3.1 Directed Cycle\DirectedCycle.java:218: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M3\3.1 Directed Cycle\DirectedCycle.java:222: Line is longer than 80 characters (found 90). [LineLength]
+[ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M3\3.1 Directed Cycle\DirectedCycle.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
-Checkstyle ends with 25 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 Audit done.
 Starting audit...
 [ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M3\3.1 Directed Cycle\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M3\3.1 Directed Cycle\Stack.java:34:3: Unused @param tag for '<item>'. [JavadocType]
-[ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M3\3.1 Directed Cycle\Stack.java:36: Type Javadoc comment is missing @param <Item> tag. [JavadocType]
-[ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M3\3.1 Directed Cycle\Stack.java:40:17: Name 'Num' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
 Audit done.
-Checkstyle ends with 4 errors.
+Checkstyle ends with 1 errors.
