@@ -36,7 +36,7 @@ public class Solution {
         if (directedCycleObj.hasCycle()) {
             System.out.println("Cycle exists.");
         } else {
-            System.out.println("Cycle dosen't exists.");
+            System.out.println("Cycle doesn't exists.");
         }
     }
 }
