@@ -223,9 +223,20 @@ public class DirectedCycle {
                 return false;
             }
         }
-
-
         return true;
+    }
+     /**
+     * Returns a string representation of the object.
+     *
+     * @return     String representation of the object.
+     */
+    public String toString() {
+        if (hasCycle()) {
+            return "Cycle exists.";
+        } else {
+            return "Cycle doesn't exists.";
+        }
+
     }
 
 }

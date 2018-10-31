@@ -33,6 +33,10 @@ public class Solution {
         }
         DirectedCycle directedCycleObj;
         directedCycleObj = new DirectedCycle(digraphObject);
-        System.out.println(directedCycleObj);
+        if (directedCycleObj.hasCycle()) {
+            System.out.println("Cycle exists.");
+        } else {
+            System.out.println("Cycle dosen't exists.");
+        }
     }
 }
