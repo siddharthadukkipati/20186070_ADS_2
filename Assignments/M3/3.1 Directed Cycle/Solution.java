@@ -1,7 +1,7 @@
 /**
  * { item_description }.
  */
-import java.util.*;
+import java.util.Scanner;
 /**
  * Class for solution.
  */
@@ -9,7 +9,7 @@ public final class Solution {
     /**
      * Constructs the object.
      */
-    Solution() {
+    private Solution() {
         //unused..
     }
     /**
