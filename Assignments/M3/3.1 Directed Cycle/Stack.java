@@ -4,8 +4,7 @@
  *
  *  A generic stack, implemented using a linked list. Each stack
  *  element is of type Item.
- *  
- *  % more tobe.txt 
+ *  % more tobe.txt
  *  to be or not to - be - - that - - - is
  *
  *  % java Stack < tobe.txt
@@ -18,21 +17,26 @@ import java.util.NoSuchElementException;
 
 
 /**
- *  The <tt>Stack</tt> class represents a last-in-first-out (LIFO) stack of generic items.
- *  It supports the usual <em>push</em> and <em>pop</em> operations, along with methods
- *  for peeking at the top item, testing if the stack is empty, and iterating through
+ *  The <tt>Stack</tt> class represents a last-in-first-out (LIFO) stack
+ *  of generic items.
+ *  It supports the usual <em>push</em> and <em>pop</em> operations, along
+ *  with methods
+ *  for peeking at the top item, testing if the stack is empty, and
+ *  iterating through
  *  the items in LIFO order.
  *  <p>
  *  All stack operations except iteration are constant time.
  *  <p>
- *  For additional documentation, see <a href="/algs4/13stacks">Section 1.3</a> of
+ *  For additional documentation, see <a href="/algs4/13stacks">Section
+ *  1.3</a> of
  *  <i>Algorithms, 4th Edition</i> by Robert Sedgewick and Kevin Wayne.
+ *@return dsc.
  */
 public class Stack<Item> implements Iterable<Item> {
     /**
-     * { var_description }
+     * { var_description }.
      */
-    private int N;          // size of the stack
+    private int Num;          // size of the stack
     /**
      * { var_description }.
      */
@@ -57,7 +61,7 @@ public class Stack<Item> implements Iterable<Item> {
      */
     public Stack() {
         first = null;
-        N = 0;
+        Num = 0;
     }
 
    /**
@@ -74,7 +78,7 @@ public class Stack<Item> implements Iterable<Item> {
      * @return     { description_of_the_return_value }
      */
     public int size() {
-        return N;
+        return Num;
     }
 
    /**
@@ -87,18 +91,22 @@ public class Stack<Item> implements Iterable<Item> {
         first = new Node();
         first.item = item;
         first.next = oldfirst;
-        N++;
+        Num++;
     }
-
-   /**
+    /**
+     * { function_description }.
      * Delete and return the item most recently added to the stack.
-     * Throw an exception if no such item exists because the stack is empty.
+     * Throw an exception if no such item exists because
+     * the stack is empty.
+     * @return     { description_of_the_return_value }
      */
     public Item pop() {
-        if (isEmpty()) throw new RuntimeException("Stack underflow");
+        if (isEmpty()) {
+            throw new RuntimeException("Stack underflow");
+        }
         Item item = first.item;        // save item to return
         first = first.next;            // delete first node
-        N--;
+        Num--;
         return item;                   // return the saved item
     }
     /**
