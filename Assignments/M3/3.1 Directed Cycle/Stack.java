@@ -31,7 +31,7 @@ import java.util.NoSuchElementException;
  *  1.3</a> of
  *  <i>Algorithms, 4th Edition</i> by Robert Sedgewick and Kevin Wayne.
  *@return dsc.
- *@param item
+ *@param <item>
  */
 public class Stack<Item> implements Iterable<Item> {
     /**
