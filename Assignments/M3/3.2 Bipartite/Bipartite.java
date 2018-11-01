@@ -2,10 +2,25 @@
  * Class for bipartite.
  */
 public class Bipartite {
+    /**
+     * { var_description }.
+     */
     private boolean isBipartite;   // is the graph bipartite?
+    /**
+     * { var_description }.
+     */
     private boolean[] color;       // color[v] gives vertices on one side of bipartition
+    /**
+     * { var_description }.
+     */
     private boolean[] marked;      // marked[v] = true iff v has been visited in DFS
+    /**
+     * { var_description }.
+     */
     private int[] edgeTo;          // edgeTo[v] = last edge on path to v
+    /**
+     * { var_description }.
+     */
     private Stack<Integer> cycle;  // odd-length cycle
 
     /**
@@ -27,7 +42,12 @@ public class Bipartite {
         }
         assert check(G);
     }
-
+    /**
+     * { function_description }.
+     *
+     * @param      G     { parameter_description }
+     * @param      v     { parameter_description }
+     */
     private void dfs(Graph G, int v) {
         marked[v] = true;
         for (int w : G.adj(v)) {
@@ -72,13 +92,15 @@ public class Bipartite {
      *         are in the same side of the bipartition if and only if they have the
      *         same color
      * @throws IllegalArgumentException unless {@code 0 <= v < V}
-     * @throws UnsupportedOperationException if this method is called when the graph
+     * @throws UnsupportedOperationException
+     * if this method is called when the graph
      *         is not bipartite
      */
     public boolean color(int v) {
         validateVertex(v);
-        if (!isBipartite)
+        if (!isBipartite) {
             throw new UnsupportedOperationException("graph is not bipartite");
+        }
         return color[v];
     }
 
