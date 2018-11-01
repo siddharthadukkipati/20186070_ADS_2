@@ -49,8 +49,8 @@ public class WordNet {
             // System.out.println(Arrays.toString(data));
             int ver1 = Integer.parseInt(data[0]);
             for (int i = 0; i < data.length; i++) {
-                int ver2 = Integer.parseInt(data[i+1]);
-                digraph.addEdge(ver1,ver2);
+                int ver2 = Integer.parseInt(data[i]);
+                digraph.addEdge(ver1, ver2);
             }
         }
         System.out.println(digraph);
