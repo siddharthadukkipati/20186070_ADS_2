@@ -48,8 +48,8 @@ public class WordNet {
             String[] data = in.readString().split(",");
             // System.out.println(Arrays.toString(data));
             int ver1 = Integer.parseInt(data[0]);
-            for (int i = 1; i < data.length-1; i++) {
-                int ver2 = Integer.parseInt(data[i]);
+            for (int i = 0; i < data.length; i++) {
+                int ver2 = Integer.parseInt(data[i + 1]);
                 digraph.addEdge(ver1, ver2);
             }
         }
