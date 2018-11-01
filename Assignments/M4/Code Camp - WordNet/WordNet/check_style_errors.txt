@@ -483,5 +483,7 @@ Starting audit...
 [ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M4\Code Camp - WordNet\WordNet\WordNet.java:45:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M4\Code Camp - WordNet\WordNet\WordNet.java:45:34: Parameter filename should be final. [FinalParameters]
 [ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M4\Code Camp - WordNet\WordNet\WordNet.java:45:51: Parameter digraph should be final. [FinalParameters]
+[ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M4\Code Camp - WordNet\WordNet\WordNet.java:51:44: '-' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M4\Code Camp - WordNet\WordNet\WordNet.java:51:45: '-' is not followed by whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 16 errors.
+Checkstyle ends with 18 errors.
