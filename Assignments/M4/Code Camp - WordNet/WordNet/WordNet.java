@@ -50,7 +50,13 @@ public class WordNet {
                 digraph.addEdge(Integer.parseInt(data[0]), Integer.parseInt(data[i]));
             }
         }
-        System.out.println(digraph);
+        // System.out.println(digraph);
+        DirectedCycle dcObject = new DirectedCycle(digraph);
+        if (dcObject.hasCycle()) {
+            System.out.println("Cycle detected");
+        } else {
+            System.out.println(digraph);
+        }
     }
     // do unit testing of this class
     // public static void main(String[] args)
