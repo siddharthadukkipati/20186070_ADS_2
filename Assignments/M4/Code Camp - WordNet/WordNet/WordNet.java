@@ -50,8 +50,8 @@ public class WordNet {
             int ver1 = Integer.parseInt(data[0]);
             int ver2 = Integer.parseInt(data[1]);
             digraph.addEdge(ver1,ver2);
-
         }
+        System.out.println(digraph);
     }
     // do unit testing of this class
     // public static void main(String[] args)
