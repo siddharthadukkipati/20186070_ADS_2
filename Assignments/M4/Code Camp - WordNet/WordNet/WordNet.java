@@ -46,7 +46,7 @@ public class WordNet {
         In in = new In("./Files" + "/" + filename);
         while (!in.isEmpty()) {
             String[] data = in.readString().split(",");
-            for (int i = 0; i < data.length; i++) {
+            for (int i = 1; i < data.length; i++) {
                 digraph.addEdge(Integer.parseInt(data[0]), Integer.parseInt(data[i]));
             }
         }
