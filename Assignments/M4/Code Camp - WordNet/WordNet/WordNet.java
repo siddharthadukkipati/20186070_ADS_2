@@ -30,16 +30,16 @@ public class WordNet {
     
     public void readSynsetFile(String filename, String hypernyms) {
         int id;
-        int count = 0;
+        int ver = 0;
         In in = new In("./Files" + "/" + filename);
         while (!in.isEmpty()) {
-            count++;
+            ver++;
             String[] data = in.readString().split(",");
             // System.out.println(Arrays.toString(data));
             id = Integer.parseInt(data[0]);
             String[] synArray = data[1].split(",");
         }
-        Digraph digraphObject = new Digraph(count);
+        Digraph digraphObject = new Digraph(ver);
         readHypernymFile(hypernyms, digraphObject);
     }
     public void readHypernymFile(String filename, Digraph digraph) {
@@ -48,8 +48,10 @@ public class WordNet {
             String[] data = in.readString().split(",");
             // System.out.println(Arrays.toString(data));
             int ver1 = Integer.parseInt(data[0]);
-            int ver2 = Integer.parseInt(data[1]);
-            digraph.addEdge(ver1,ver2);
+            for (int i = 0; i < data.length; i++) {
+                int ver2 = Integer.parseInt(data[i+1]);
+                digraph.addEdge(ver1,ver2);
+            }
         }
         System.out.println(digraph);
     }
