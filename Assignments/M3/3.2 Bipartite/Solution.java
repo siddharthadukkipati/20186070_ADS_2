@@ -1,30 +1,39 @@
 import java.util.Scanner;
 /**
- * Solution class.
+ * class for solution.
  */
-final class Solution{
+public final class Solution {
     /**
-     * { function_description }.
+     * Constructs the object.
+     */
+    private Solution() {
+        // default constructor is not used.
+    }
+
+    /**
+     * main function.
      *
      * @param      args  The arguments
      */
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int vertex = Integer.parseInt(sc.nextLine());
-        Graph graph = new Graph(vertex);
-        int edge = Integer.parseInt(sc.nextLine());
-        for (int i = 0; i < edge; i++) {
-            String[] tokens = sc.nextLine().split(" ");
+    public static void main(final String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int vertices = Integer.parseInt(scan.nextLine());
+        int edges = Integer.parseInt(scan.nextLine());
+        Graph graphObj = new Graph(vertices);
+        while (edges > 0) {
+            String[] tokens = scan.nextLine().split(" ");
             int v = Integer.parseInt(tokens[0]);
             int w = Integer.parseInt(tokens[1]);
-            graph.addEdge(v, w);
+            graphObj.addEdge(v, w);
+            edges--;
         }
-        Bipartite bipartite = new Bipartite(graph);
-        if (bipartite.isBipartite()) {
+        Bipartite bipartiteObj = new Bipartite(graphObj);
+        if (bipartiteObj.isBipartite()) {
             System.out.println("Graph is bipartite");
         } else {
             System.out.println("Graph is not a bipartite");
         }
-
     }
 }
+
+
