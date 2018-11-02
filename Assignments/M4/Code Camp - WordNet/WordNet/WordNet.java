@@ -73,7 +73,7 @@ public class WordNet {
                     degree++;
                 }
                 if (degree > 1) {
-                    throw new IllegalArgumentException("Mutiple roots");
+                    throw new IllegalArgumentException("Multiple roots");
                 }
             }
             System.out.println(digraph);
