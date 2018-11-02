@@ -1,10 +1,17 @@
 import java.util.Arrays;
+import java.util.ArrayList;
 public class WordNet {
 
     private Digraph digraph;
+    private LinearProbingHashST<Integer, String> id;
+    private LinearProbingHashST<String, ArrayList<Integer>> noun;
+    private int ver;
         // constructor takes the name of the two input files
     public WordNet(String synsets, String hypernyms) {
-        readSynsetFile(synsets, hypernyms);
+        readSynsetFile(synsets);
+        id = new LinearProbingHashST<Integer, String>();
+        noun = new LinearProbingHashST<String, ArrayList<Integer>>();
+        readHypernymFile(hypernyms, digraph);
         // return;
     }
 
@@ -30,26 +37,26 @@ public class WordNet {
     // }
     
     
-    public void readSynsetFile(String filename, String hypernyms) {
+    public void readSynsetFile(String filename) {
         int id;
-        int ver = 0;
+        // int ver = 0;
         In in = new In("./Files" + "/" + filename);
         while (!in.isEmpty()) {
             ver++;
-            String[] data = in.readString().split(",");
-            // System.out.println(Arrays.toString(data));
-            id = Integer.parseInt(data[0]); 
-            String[] synArray = data[1].split(",");
+            String[] synsetArray = in.readString().split(",");
+            // System.out.println(Arrays.toString(synsetArray));
+            id = Integer.parseInt(synsetArray[0]); 
+            String[] nounArray = synsetArray[1].split(" ");
             digraph = new Digraph(ver);
+
         }
-        readHypernymFile(hypernyms, digraph);
     }
     public void readHypernymFile(String filename, Digraph digraph) {
         In in = new In("./Files" + "/" + filename);
         while (!in.isEmpty()) {
-            String[] data = in.readString().split(",");
-            for (int i = 1; i < data.length; i++) {
-                digraph.addEdge(Integer.parseInt(data[0]), Integer.parseInt(data[i]));
+            String[] synsetArray = in.readString().split(",");
+            for (int i = 1; i < synsetArray.length; i++) {
+                digraph.addEdge(Integer.parseInt(synsetArray[0]), Integer.parseInt(synsetArray[i]));
             }
         }
         // System.out.println(digraph);
