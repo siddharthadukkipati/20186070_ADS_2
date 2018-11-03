@@ -1,7 +1,11 @@
 import java.util.Arrays;
 class PageRank {
 	
-	
+	private Digraph graphObj;
+
+	PageRank(Digraph digraph) {
+		this.graphObj = digraph;
+	}
 }
 
 class WebSearch {
@@ -27,6 +31,7 @@ public class Solution {
 		}
 		System.out.println(digraphObj);
 		// Create page rank object and pass the digraphObj object to the constructor
+		PageRank pageRankObj = new PageRank(digraphObj);
 
 		// print the page rank object
 
