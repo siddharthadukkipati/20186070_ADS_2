@@ -2,9 +2,13 @@ import java.util.Arrays;
 class PageRank {
 	
 	private Digraph graphObj;
-
+	private double[] pageRank;
 	PageRank(Digraph digraph) {
 		this.graphObj = digraph;
+		pageRank = new double[graphObj.V()];
+	}
+	void getPR(int vertices) {
+		return;
 	}
 }
 
