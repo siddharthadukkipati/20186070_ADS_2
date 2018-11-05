@@ -26,6 +26,13 @@ class PageRank {
 		}
 		return pagerank;
 	}
+	String tostring() {
+		String output = "";
+		for (int i = 0; i < graphObj.V(); i++) {
+			output += i + " - " + (getPR(i)) + "\n";
+		}
+		return output;
+	}
 }
 
 class WebSearch {
