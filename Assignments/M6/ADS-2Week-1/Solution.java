@@ -24,6 +24,17 @@ class PageRank {
 				}
 			}
 		}
+		for (int k = 0; k < 1000; k++) {
+			Double[] temp = new Double[graphObj.V()];
+			for (int l = 0; l < graphObj.V(); l++) {
+				Double rank = 0.0;
+				for (int m : graphObj.reverse().adj(l)) {
+					rank += pagerank[m] / graphObj.outdegree(m);
+				}
+				temp[l] = rank;
+			}
+			pagerank = temp;			
+		}
 		return pagerank;
 	}
 	public String toString() {
