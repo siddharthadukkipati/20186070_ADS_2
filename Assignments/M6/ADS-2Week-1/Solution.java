@@ -26,7 +26,7 @@ class PageRank {
 		}
 		return pagerank;
 	}
-	String tostring() {
+	public String toString() {
 		String output = "";
 		for (int i = 0; i < graphObj.V(); i++) {
 			output += i + " - " + (getPR(i)) + "\n";
