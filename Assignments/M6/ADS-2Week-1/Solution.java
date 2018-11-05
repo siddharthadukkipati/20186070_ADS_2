@@ -2,13 +2,29 @@ import java.util.Arrays;
 class PageRank {
 	
 	private Digraph graphObj;
-	private double[] pageRank;
+	private Double[] pageRank;
 	PageRank(Digraph digraph) {
 		this.graphObj = digraph;
-		pageRank = new double[graphObj.V()];
+		pageRank = new Double[graphObj.V()];
 	}
-	void getPR(int vertices) {
-		return;
+	Double getPR(int vertices) {
+		for (int i = 0; i < graphObj.V(); i++) {
+			pageRank[i] = 1.0 / graphObj.V();
+		}
+		pageRank = getPrVal(pageRank);
+		return pageRank[vertices];
+	}
+	Double[] getPrVal(Double[] pagerank) {
+		for (int i = 0; i < graphObj.V(); i++) {
+			if (graphObj.outdegree(i) == 0) {
+				for (int j = 0; j < graphObj.V(); j++) {
+					if (i != j) {
+						graphObj.addEdge(i, j);
+					}
+				}
+			}
+		}
+		return pagerank;
 	}
 }
 
@@ -36,6 +52,7 @@ public class Solution {
 		System.out.println(digraphObj);
 		// Create page rank object and pass the digraphObj object to the constructor
 		PageRank pageRankObj = new PageRank(digraphObj);
+		System.out.println(pageRankObj);
 
 		// print the page rank object
 
