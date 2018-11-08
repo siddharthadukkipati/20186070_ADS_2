@@ -1,3 +1,13 @@
+/******************************************************************************
+ *  Compilation:  javac LinearProbingHashST.java
+ *  Execution:    java LinearProbingHashST < input.txt
+ *  Dependencies: StdIn.java StdOut.java
+ *  Data files:   https://algs4.cs.princeton.edu/34hash/tinyST.txt
+ *
+ *  Symbol-table implementation with linear-probing hash table.
+ *
+ ******************************************************************************/
+
 /**
  *  The {@code LinearProbingHashST} class represents a symbol table of generic
  *  key-value pairs.
@@ -107,7 +117,7 @@ public class LinearProbingHashST<Key, Value> {
     }
 
     /**
-     * Inserts the specified key-value pair into the symbol table, overwriting the old 
+     * Inserts the specified key-value pair into the symbol table, overwriting the old
      * value with the new value if the symbol table already contains the specified key.
      * Deletes the specified key (and its associated value) from this symbol table
      * if the specified value is {@code null}.
@@ -155,8 +165,8 @@ public class LinearProbingHashST<Key, Value> {
     }
 
     /**
-     * Removes the specified key and its associated value from this symbol table     
-     * (if the key is in this symbol table).    
+     * Removes the specified key and its associated value from this symbol table
+     * (if the key is in this symbol table).
      *
      * @param  key the key
      * @throws IllegalArgumentException if {@code key} is {@code null}
