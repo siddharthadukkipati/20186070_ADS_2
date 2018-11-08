@@ -4,7 +4,7 @@ public class SeamCarver {
 	private Picture picture;
 	public SeamCarver(Picture picture1) {
 		if (picture1 == null) {
-			throw new IllegalArgumentException("Picture is null");
+			throw new IllegalArgumentException("picture is null");
 		}
 		this.picture = picture1;
 	}
