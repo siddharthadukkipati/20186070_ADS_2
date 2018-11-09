@@ -49,10 +49,10 @@ public class WordNet {
      * @return     { description_of_the_return_value }
      */
     public int readSynset(final String synset) {
-        int vertices = 0;
+        int vertice = 0;
         In in = new In("./Files/" + synset);
         while (!in.isEmpty()) {
-            vertices++;
+            vertice++;
             String[] synsetArray = in.readLine().split(",");
             int id = Integer.parseInt(synsetArray[0]);
             synsetsId.add(id, synsetArray[1]);
@@ -71,7 +71,7 @@ public class WordNet {
             }
             //System.out.println("idlist");
         }
-        return vertices;
+        return vertice;
         // readHypernym(hypernym, digraph);
     }
     /**
