@@ -3,51 +3,54 @@
  */
 public class EdgeWeightedGraph {
     /**
-     * variable vertex.
+     * {Vertices}.
      */
-    private int vert;
+    private int vertices;
     /**
-     * variable edge.
+     * {Edges}.
      */
     private int edges;
     /**
-     * bag of adjacent vertices list.
+     * {Bag array of type Edge}.
      */
     private Bag<Edge>[] adj;
+
     /**
-     * Constructs the object.
-     *
-     * @param  v1 integer vertex.
+     * Initializes an empty edge-weighted graph with {@code v}
+     * vertices and 0 edges.
+     * @param  v the number of vertices
+     * @throws IllegalArgumentException if {@code v < 0}
      */
-    public EdgeWeightedGraph(final int v1) {
-        this.vert = v1;
+    public EdgeWeightedGraph(final int v) {
+        this.vertices = v;
         this.edges = 0;
-        adj = (Bag<Edge>[]) new Bag[v1];
-        for (int i = 0; i < v1; i++) {
+        adj = (Bag<Edge>[]) new Bag[v];
+        for (int i = 0; i < v; i++) {
             adj[i] = new Bag<Edge>();
         }
     }
-
     /**
-     * return vertices.
+     * Returns the number of vertices in this edge-weighted graph.
      *
-     * @return vertex count
+     * @return the number of vertices in this edge-weighted graph
      */
     public int vertices() {
-        return this.vert;
+        return this.vertices;
     }
+
     /**
-     * return edges.
+     * Returns the number of edges in this edge-weighted graph.
      *
-     * @return edge count
+     * @return the number of edges in this edge-weighted graph
      */
-    public int edges() {
+    public int edge() {
         return this.edges;
     }
+
     /**
-     * Adds an edge.
+     * Adds the undirected edge {@code e} to this edge-weighted graph.
      *
-     * @param      e Edge object
+     * @param  e the edge
      */
     public void addEdge(final Edge e) {
         int v = e.either();
@@ -56,43 +59,42 @@ public class EdgeWeightedGraph {
         adj[w].add(e);
         edges++;
     }
+
     /**
-     * returns adjacent vertex.
+     * Returns the edges incident on vertex {@code v}.
      *
-     * @param      v integer.
-     *
-     * @return  adjacent vertex.
+     * @param  v the vertex
+     * @return the edges incident on vertex {@code v}
      */
     public Iterable<Edge> adj(final int v) {
-
         return adj[v];
     }
+
     /**
-     * degree that gives size of adjacent list.
+     * Returns the degree of vertex {@code v}.
      *
-     * @param      v vertex.
-     *
-     * @return degree.
+     * @param  v the vertex
+     * @return the degree of vertex {@code v}
      */
     public int degree(final int v) {
-
         return adj[v].size();
     }
+
     /**
-     * edges that iterates and add.
+     * Returns all edges in this edge-weighted graph.
      *
-     * @return iterable list.
+     * @return all edges in this edge-weighted graph, as an iterable
      */
-    public Iterable<Edge> edge() {
+    public Iterable<Edge> edges() {
         Bag<Edge> list = new Bag<Edge>();
-        for (int v = 0; v < vert; v++) {
+        for (int j = 0; j < vertices; j++) {
             int selfLoops = 0;
-            for (Edge e : adj(v)) {
-                if (e.other(v) > v) {
+            for (Edge e : adj(j)) {
+                if (e.other(j) > j) {
                     list.add(e);
-                } else if (e.other(v) == v) {
+                } else if (e.other(j) == j) {
                     if (selfLoops % 2 == 0) {
-                     list.add(e);
+                        list.add(e);
                     }
                     selfLoops++;
                 }
@@ -100,5 +102,4 @@ public class EdgeWeightedGraph {
         }
         return list;
     }
-
 }
