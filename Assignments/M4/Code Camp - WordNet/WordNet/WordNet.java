@@ -44,7 +44,9 @@ public class WordNet {
     /**
      * Reads a synset.
      *
-     * @param      synset     The synset
+     * @param      synset  The synset
+     *
+     * @return     { description_of_the_return_value }
      */
     public int readSynset(final String synset) {
         int vertices = 0;
@@ -125,9 +127,14 @@ public class WordNet {
 
     }
 
-//a synset (second field of synsets.txt) that
-// is the common ancestor of nounA and nounB
-//in a shortest ancestral path (defined below)
+    /**
+     * { function_description }.
+     *
+     * @param      nounA  The noun a
+     * @param      nounB  The noun b
+     *
+     * @return     { description_of_the_return_value }
+     */
     public String sap(final String nounA, final String nounB) {
         ArrayList<Integer> noun1 = linearprobing.get(nounA);
         ArrayList<Integer> noun2 = linearprobing.get(nounB);
@@ -137,6 +144,9 @@ public class WordNet {
         int id = sap.ancestor(noun1, noun2);
         return synsetsId.get(id);
     }
+    /**
+     * { function_description }
+     */
     public void display() {
 
         DirectedCycle directedCycle = new DirectedCycle(graph);

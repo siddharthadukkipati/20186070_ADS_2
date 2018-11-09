@@ -8,16 +8,12 @@ Audit done.
 Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M4\Code Camp - WordNet\WordNet\WordNet.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M4\Code Camp - WordNet\WordNet\WordNet.java:49: Expected @return tag. [JavadocMethod]
-[ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M4\Code Camp - WordNet\WordNet\WordNet.java:50:13: 'vertices' hides a field. [HiddenField]
-[ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M4\Code Camp - WordNet\WordNet\WordNet.java:118:5: Class 'WordNet' looks like designed for extension (can be subclassed), but the method 'distance' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'WordNet' final or making the method 'distance' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
-[ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M4\Code Camp - WordNet\WordNet\WordNet.java:118:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M4\Code Camp - WordNet\WordNet\WordNet.java:131:5: Class 'WordNet' looks like designed for extension (can be subclassed), but the method 'sap' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'WordNet' final or making the method 'sap' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
-[ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M4\Code Camp - WordNet\WordNet\WordNet.java:131:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M4\Code Camp - WordNet\WordNet\WordNet.java:140:5: Class 'WordNet' looks like designed for extension (can be subclassed), but the method 'display' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'WordNet' final or making the method 'display' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
-[ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M4\Code Camp - WordNet\WordNet\WordNet.java:140:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M4\Code Camp - WordNet\WordNet\WordNet.java:52:13: 'vertices' hides a field. [HiddenField]
+[ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M4\Code Camp - WordNet\WordNet\WordNet.java:120:5: Class 'WordNet' looks like designed for extension (can be subclassed), but the method 'distance' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'WordNet' final or making the method 'distance' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
+[ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M4\Code Camp - WordNet\WordNet\WordNet.java:120:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M4\Code Camp - WordNet\WordNet\WordNet.java:147: First sentence should end with a period. [JavadocStyle]
 Audit done.
-Checkstyle ends with 9 errors.
+Checkstyle ends with 5 errors.
 Files to process must be specified, found 0.
 Files to process must be specified, found 0.
 Files to process must be specified, found 0.
