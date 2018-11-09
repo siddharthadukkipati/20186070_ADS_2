@@ -1,23 +1,13 @@
 Starting audit...
-[ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M7\1. MST\Bag.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
-Checkstyle ends with 1 errors.
 Starting audit...
-[ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M7\1. MST\Edge.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
-Checkstyle ends with 1 errors.
 Starting audit...
-[ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M7\1. MST\EdgeWeightedGraph.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
-Checkstyle ends with 1 errors.
 Starting audit...
-[ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M7\1. MST\LazyPrimMST.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
-Checkstyle ends with 1 errors.
 Starting audit...
-[ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M7\1. MST\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
-Checkstyle ends with 1 errors.
 Starting audit...
 Audit done.
 Files to process must be specified, found 0.
