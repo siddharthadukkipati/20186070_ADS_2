@@ -115,8 +115,14 @@ public class WordNet {
         return linearprobing.contains(word);
     }
 
-
-// distance between nounA and nounB (defined below)
+    /**
+     * { function_description }.
+     *
+     * @param      nounA  The noun a
+     * @param      nounB  The noun b
+     *
+     * @return     { description_of_the_return_value }
+     */
     public int distance(final String nounA, final String nounB) {
         ArrayList<Integer> noun1 = linearprobing.get(nounA);
         ArrayList<Integer> noun2 = linearprobing.get(nounB);
@@ -145,7 +151,7 @@ public class WordNet {
         return synsetsId.get(id);
     }
     /**
-     * { function_description }
+     * { function_description }.
      */
     public void display() {
 
