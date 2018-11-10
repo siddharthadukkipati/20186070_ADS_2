@@ -71,13 +71,26 @@ public final class Solution {
             final int source2 = Integer.parseInt(token[0]);
             final int via = Integer.parseInt(token[1]);
             final int destination2 = Integer.parseInt(token[2]);
-            DijkstraUndirectedSP dijkstraOb =
-            new DijkstraUndirectedSP(edgeweight, source2);
-            if (dijkstraOb.hasPathTo(destination2)) {
-                System.out.println(dijkstraOb.distTo(destination2));
+            DijkstraUndirectedSP dijkstraSource = new DijkstraUndirectedSP(edgeweight, source2);
+            DijkstraUndirectedSP dijkstraVia = new DijkstraUndirectedSP(edgeweight, via);
+            String track = " ";
+            if (dijkstraSource.hasPathTo(via) && dijkstraVia.hasPathTo(destination2)) {
+                for (Edge eachPath : dijkstraSource.pathTo(via)) {
+                    track += eachPath + " ";
+                }
+                for (Edge eachPath2 : dijkstraVia.pathTo(destination2)) {
+                    track += eachPath2 + " ";
+                }
+                track = track + token[2];
+                System.out.println(track);
             } else {
                 System.out.println("No Path Found.");
             }
+            // if (dijkstraSource.hasPathTo(destination2)) {
+            //     // System.out.println(dijkstraS.distTo(destination2));
+            // } else {
+            //     System.out.println("No Path Found.");
+            // }
             break;
 
         default:
