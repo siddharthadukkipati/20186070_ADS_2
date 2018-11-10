@@ -17,7 +17,7 @@ public class Solution {
 			Edge edgeObj = new Edge(vert, edg, weight);
 			edgeweight.addEdge(edgeObj);
 		}
-		String caseToGo = StdIn.readLine();
+		String caseToGo = scan.nextLine();
 		switch (caseToGo) {
 		case "Graph":
 			//Print the Graph Object.
