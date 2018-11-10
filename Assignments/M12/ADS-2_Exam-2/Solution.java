@@ -9,8 +9,8 @@ public class Solution {
     /**
      * Constructs the object.
      */
-    Solution() {
-        //unused.
+    private Solution() {
+        // unused constructor
     }
     /**
      * { function_description }.
@@ -74,7 +74,7 @@ public class Solution {
             DijkstraUndirectedSP dijkstraOb =
             new DijkstraUndirectedSP(edgeweight, source2);
             if (dijkstraOb.hasPathTo(destination2)) {
-                //
+                System.out.println(dijkstraOb.distTo(destination2));
             } else {
                 System.out.println("No Path Found.");
             }
