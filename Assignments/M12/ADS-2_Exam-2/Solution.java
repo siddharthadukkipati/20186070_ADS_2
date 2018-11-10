@@ -7,6 +7,12 @@ import java.util.Scanner;
  */
 public class Solution {
     /**
+     * Constructs the object.
+     */
+    Solution() {
+        //unused.
+    }
+    /**
      * { function_description }.
      *
      * @param      args  The arguments
@@ -43,7 +49,8 @@ public class Solution {
             final String[] tokens = scan.nextLine().split(" ");
             final int source1 = Integer.parseInt(tokens[0]);
             final int destination1 = Integer.parseInt(tokens[1]);
-            DijkstraUndirectedSP dijkstraObj = new DijkstraUndirectedSP(edgeweight, source1);
+            DijkstraUndirectedSP dijkstraObj =
+            new DijkstraUndirectedSP(edgeweight, source1);
             double distBetween = dijkstraObj.distTo(destination1);
             if (dijkstraObj.hasPathTo(destination1)) {
                 System.out.println(distBetween);
@@ -55,7 +62,8 @@ public class Solution {
 
         case "ViaPaths":
             // Handle the case of ViaPaths, where three integers are given.
-            // First is the source and second is the via is the one where path should pass throuh.
+            // First is the source and second is the via
+            // is the one where path should pass throuh.
             // third is the destination.
             // If the path exists print the distance between them.
             // Other wise print "No Path Found."
@@ -63,7 +71,8 @@ public class Solution {
             final int source2 = Integer.parseInt(token[0]);
             final int via = Integer.parseInt(token[1]);
             final int destination2 = Integer.parseInt(token[2]);
-            DijkstraUndirectedSP dijkstraOb = new DijkstraUndirectedSP(edgeweight, source2);
+            DijkstraUndirectedSP dijkstraOb =
+            new DijkstraUndirectedSP(edgeweight, source2);
             if (dijkstraOb.hasPathTo(destination2)) {
                 //
             } else {
