@@ -10,7 +10,7 @@ Expected Output:
 
 Your Output: 
 Exception in thread "main" java.lang.NullPointerException
-	at Solution.main(Solution.java:18)
+	at Solution.main(Solution.java:21)
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -28,10 +28,8 @@ Expected Output:
 9: 7-9 157.00000  2-9 237.00000
 
 Your Output: 
-Exception in thread "main" java.lang.IllegalArgumentException: vertex 78 is not between 0 and 9
-	at Digraph.validateVertex(Digraph.java:156)
-	at Digraph.addEdge(Digraph.java:168)
-	at Solution.main(Solution.java:14)
+Exception in thread "main" java.lang.NullPointerException
+	at Solution.main(Solution.java:21)
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -40,7 +38,7 @@ No Path Found.
 
 Your Output: 
 Exception in thread "main" java.lang.NullPointerException
-	at Solution.main(Solution.java:18)
+	at Solution.main(Solution.java:21)
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -48,10 +46,8 @@ Expected Output:
 370.0
 
 Your Output: 
-Exception in thread "main" java.lang.IllegalArgumentException: vertex 78 is not between 0 and 9
-	at Digraph.validateVertex(Digraph.java:156)
-	at Digraph.addEdge(Digraph.java:168)
-	at Solution.main(Solution.java:14)
+Exception in thread "main" java.lang.NullPointerException
+	at Solution.main(Solution.java:21)
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -60,7 +56,7 @@ No Path Found.
 
 Your Output: 
 Exception in thread "main" java.lang.NullPointerException
-	at Solution.main(Solution.java:18)
+	at Solution.main(Solution.java:21)
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########
@@ -69,9 +65,7 @@ Expected Output:
 5 2 4 0 7 1
 
 Your Output: 
-Exception in thread "main" java.lang.IllegalArgumentException: vertex 78 is not between 0 and 9
-	at Digraph.validateVertex(Digraph.java:156)
-	at Digraph.addEdge(Digraph.java:168)
-	at Solution.main(Solution.java:14)
+Exception in thread "main" java.lang.NullPointerException
+	at Solution.main(Solution.java:21)
 ----------------------------------------
 

@@ -1,24 +1,28 @@
-// import java.util.Scanner;
+import java.util.Scanner;
 public class Solution {
 
 	public static void main(String[] args) {
 		// Self loops are not allowed...
 		// Parallel Edges are allowed...
 		// Take the Graph input here...
-		// Scanner scan = new Scanner(System.in);
-		int vertexCount = Integer.parseInt(StdIn.readLine());
-		Digraph digraphObj = new Digraph(vertexCount); 
-		for (int i = 0; i < vertexCount; i++) {
-			String[] edges = StdIn.readLine().split(" ");
-			for (int k = 1; k < edges.length ; k++) {
-				digraphObj.addEdge(Integer.parseInt(edges[0]), Integer.parseInt(edges[k]));
-			}
+		Scanner scan = new Scanner(System.in);
+		int vertexCount = Integer.parseInt(scan.nextLine());
+		int edges = Integer.parseInt(scan.nextLine());
+		EdgeWeightedGraph edgeweight = new EdgeWeightedGraph(vertexCount);
+		for (int i = 0; i < edges; i++) {
+			String[] tokens = scan.nextLine().split(" ");
+			int vert = Integer.parseInt(tokens[0]);
+			int edg = Integer.parseInt(tokens[1]);
+			double weight = Double.parseDouble(tokens[2]);
+			Edge edgeObj = new Edge(vert, edg, weight);
+			edgeweight.addEdge(edgeObj);
 		}
-		String caseToGo = null;
+		String caseToGo = StdIn.readLine();
 		switch (caseToGo) {
 		case "Graph":
 			//Print the Graph Object.
-			System.out.println(digraphObj);
+
+			System.out.println(edgeweight);
 
 			break;
 
