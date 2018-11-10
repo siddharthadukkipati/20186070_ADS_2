@@ -34,7 +34,8 @@ public class Solution {
 			int source = Integer.parseInt(tokens[0]);
 			int destination = Integer.parseInt(tokens[1]);
    	        DijkstraUndirectedSP dijkstraObj = new DijkstraUndirectedSP(edgeweight, source);
-   	        System.out.println(dijkstraObj);
+   	        double distBetween = dijkstraObj.distTo(destination);
+   	        System.out.println(distBetween);
 			break;
 
 		case "ViaPaths":
