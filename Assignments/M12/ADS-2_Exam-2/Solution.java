@@ -1,4 +1,4 @@
-import java.util.Scanner;
+// import java.util.Scanner;
 public class Solution {
 
 	public static void main(String[] args) {
@@ -14,7 +14,7 @@ public class Solution {
 				digraphObj.addEdge(Integer.parseInt(edges[0]), Integer.parseInt(edges[k]));
 			}
 		}
-		String caseToGo = StdIn.readLine();
+		String caseToGo = null;
 		switch (caseToGo) {
 		case "Graph":
 			//Print the Graph Object.

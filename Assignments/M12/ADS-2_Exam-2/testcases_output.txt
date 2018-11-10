@@ -9,7 +9,8 @@ Expected Output:
 5:
 
 Your Output: 
-
+Exception in thread "main" java.lang.NullPointerException
+	at Solution.main(Solution.java:18)
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -38,7 +39,8 @@ Expected Output:
 No Path Found.
 
 Your Output: 
-
+Exception in thread "main" java.lang.NullPointerException
+	at Solution.main(Solution.java:18)
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -57,7 +59,8 @@ Expected Output:
 No Path Found.
 
 Your Output: 
-
+Exception in thread "main" java.lang.NullPointerException
+	at Solution.main(Solution.java:18)
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########

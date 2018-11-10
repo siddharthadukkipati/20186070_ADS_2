@@ -272,7 +272,6 @@ Audit done.
 Checkstyle ends with 34 errors.
 Starting audit...
 [ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M12\ADS-2_Exam-2\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M12\ADS-2_Exam-2\Solution.java:1:8: Unused import - java.util.Scanner. [UnusedImports]
 [ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M12\ADS-2_Exam-2\Solution.java:2: Missing a Javadoc comment. [JavadocType]
 [ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M12\ADS-2_Exam-2\Solution.java:2:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
 [ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M12\ADS-2_Exam-2\Solution.java:4:1: File contains tab characters (this is the first instance). [FileTabCharacter]
@@ -285,7 +284,7 @@ Starting audit...
 [ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M12\ADS-2_Exam-2\Solution.java:33: Line is longer than 80 characters (found 87). [LineLength]
 [ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M12\ADS-2_Exam-2\Solution.java:34: Line is longer than 80 characters (found 110). [LineLength]
 Audit done.
-Checkstyle ends with 13 errors.
+Checkstyle ends with 12 errors.
 Starting audit...
 [ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M12\ADS-2_Exam-2\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
