@@ -35,7 +35,12 @@ public class Solution {
 			int destination = Integer.parseInt(tokens[1]);
    	        DijkstraUndirectedSP dijkstraObj = new DijkstraUndirectedSP(edgeweight, source);
    	        double distBetween = dijkstraObj.distTo(destination);
-   	        System.out.println(distBetween);
+   	        if (dijkstraObj.hasPathTo(destination)) {
+   	        	System.out.println(distBetween);
+   	        } else {
+   	        	System.out.println("No Path Found.");
+   	        }
+   	        // System.out.println(distBetween);
 			break;
 
 		case "ViaPaths":
