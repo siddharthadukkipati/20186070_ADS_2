@@ -31,11 +31,11 @@ public class Solution {
 			// If the path exists print the distance between them.
 			// Other wise print "No Path Found."
 			String[] tokens = scan.nextLine().split(" ");
-			int source = Integer.parseInt(tokens[0]);
-			int destination = Integer.parseInt(tokens[1]);
-   	        DijkstraUndirectedSP dijkstraObj = new DijkstraUndirectedSP(edgeweight, source);
-   	        double distBetween = dijkstraObj.distTo(destination);
-   	        if (dijkstraObj.hasPathTo(destination)) {
+			int source1 = Integer.parseInt(tokens[0]);
+			int destination1 = Integer.parseInt(tokens[1]);
+   	        DijkstraUndirectedSP dijkstraObj = new DijkstraUndirectedSP(edgeweight, source1);
+   	        double distBetween = dijkstraObj.distTo(destination1);
+   	        if (dijkstraObj.hasPathTo(destination1)) {
    	        	System.out.println(distBetween);
    	        } else {
    	        	System.out.println("No Path Found.");
@@ -49,6 +49,16 @@ public class Solution {
 			// third is the destination.
 			// If the path exists print the distance between them.
 			// Other wise print "No Path Found."
+			String[] token = scan.nextLine().split(" ");
+			int source2 = Integer.parseInt(token[0]);
+			int via = Integer.parseInt(token[1]);
+			int destination2 = Integer.parseInt(token[2]);
+			DijkstraUndirectedSP dijkstraOb = new DijkstraUndirectedSP(edgeweight, source2);
+			if (dijkstraOb.hasPathTo(destination2)) {
+				//
+			} else {
+				System.out.println("No Path Found.");
+			}
 			break;
 
 		default:
