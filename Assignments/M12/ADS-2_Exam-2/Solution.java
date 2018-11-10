@@ -83,8 +83,8 @@ public final class Solution {
                 }
                 track = track + token[2];
                 double distance = dijkstraSource.distTo(via) + dijkstraVia.distTo(destination2);
-                System.out.println(track);
                 System.out.println(distance);
+                System.out.println(track);
             } else {
                 System.out.println("No Path Found.");
             }
