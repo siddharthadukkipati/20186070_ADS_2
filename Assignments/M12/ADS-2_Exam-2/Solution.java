@@ -71,21 +71,24 @@ public final class Solution {
             final int source2 = Integer.parseInt(token[0]);
             final int via = Integer.parseInt(token[1]);
             final int destination2 = Integer.parseInt(token[2]);
-            DijkstraUndirectedSP dijkstraSource = new DijkstraUndirectedSP(edgeweight, source2);
-            DijkstraUndirectedSP dijkstraVia = new DijkstraUndirectedSP(edgeweight, via);
-            String path = "";
-            if (dijkstraSource.hasPathTo(via) && dijkstraVia.hasPathTo(destination2)) {
-                for (Edge i : dijkstraSource.pathTo(via)) {
-                    path += i + " ";
+            DijkstraUndirectedSP dijkstraSource =
+            new DijkstraUndirectedSP(edgeweight, source2);
+            DijkstraUndirectedSP dijkstraVia =
+            new DijkstraUndirectedSP(edgeweight, via);
+            String track = " ";
+            if (dijkstraSource.hasPathTo(via) &&
+                dijkstraVia.hasPathTo(destination2)) {
+                for (Edge eachPath : dijkstraSource.pathTo(via)) {
+                    track += eachPath + " ";
                 }
-                for (Edge j : dijkstraVia.pathTo(destination2)) {
-                    path += j + " ";
+                for (Edge eachPath2 : dijkstraVia.pathTo(destination2)) {
+                    track += eachPath2 + " ";
                 }
-                path = path + token[2];
-                double distance = dijkstraSource.distTo(via) + dijkstraVia.distTo(destination2);
+                track = track + token[2];
+                double distance = dijkstraSource.distTo(via)
+                + dijkstraVia.distTo(destination2);
                 System.out.println(distance);
-                System.out.println(path);
-
+                System.out.println(track);
             } else {
                 System.out.println("No Path Found.");
             }
