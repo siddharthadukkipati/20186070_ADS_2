@@ -73,18 +73,19 @@ public final class Solution {
             final int destination2 = Integer.parseInt(token[2]);
             DijkstraUndirectedSP dijkstraSource = new DijkstraUndirectedSP(edgeweight, source2);
             DijkstraUndirectedSP dijkstraVia = new DijkstraUndirectedSP(edgeweight, via);
-            String track = " ";
+            String path = "";
             if (dijkstraSource.hasPathTo(via) && dijkstraVia.hasPathTo(destination2)) {
-                for (Edge eachPath : dijkstraSource.pathTo(via)) {
-                    track += eachPath + " ";
+                for (Edge i : dijkstraSource.pathTo(via)) {
+                    path += i + " ";
                 }
-                for (Edge eachPath2 : dijkstraVia.pathTo(destination2)) {
-                    track += eachPath2 + " ";
+                for (Edge j : dijkstraVia.pathTo(destination2)) {
+                    path += j + " ";
                 }
-                track = track + token[2];
+                path = path + token[2];
                 double distance = dijkstraSource.distTo(via) + dijkstraVia.distTo(destination2);
                 System.out.println(distance);
-                System.out.println(track);
+                System.out.println(path);
+
             } else {
                 System.out.println("No Path Found.");
             }
