@@ -75,7 +75,7 @@ public final class Solution {
             new DijkstraUndirectedSP(edgeweight, source2);
             DijkstraUndirectedSP dijkstraVia =
             new DijkstraUndirectedSP(edgeweight, via);
-            String track = " ";
+            String track = "";
             if (dijkstraSource.hasPathTo(via)
                 && dijkstraVia.hasPathTo(destination2)) {
                 for (Integer eachPath : dijkstraSource.pathTo(via)) {
