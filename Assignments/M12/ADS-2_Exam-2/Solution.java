@@ -78,10 +78,10 @@ public final class Solution {
             String track = " ";
             if (dijkstraSource.hasPathTo(via)
                 && dijkstraVia.hasPathTo(destination2)) {
-                for (Edge eachPath : dijkstraSource.pathTo(via)) {
+                for (Integer eachPath : dijkstraSource.pathTo(via)) {
                     track += eachPath + " ";
                 }
-                for (Edge eachPath2 : dijkstraVia.pathTo(destination2)) {
+                for (Integer eachPath2 : dijkstraVia.pathTo(destination2)) {
                     track += eachPath2 + " ";
                 }
                 track = track + token[2];
