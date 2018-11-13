@@ -1,3 +1,6 @@
+/**
+ * Class for lsd.
+ */
 public class LSD {
     /**
      * { var_description }.
@@ -7,7 +10,7 @@ public class LSD {
     /**
      * Constructs the object.
      */
-    public LSD() { 
+    public LSD() {
         //unused...
     }
     /**
@@ -25,20 +28,20 @@ public class LSD {
         int n = a.length;
         final int two = 256;
         check = a;
-        int R = two;   // extend ASCII alphabet size
+        int Radix = two;   // extend ASCII alphabet size
         String[] aux = new String[n];
 
         for (int d = w - 1; d >= 0; d--) {
             // sort by key-indexed counting on dth character
 
             // compute frequency counts
-            int[] count = new int[R + 1];
+            int[] count = new int[Radix + 1];
             for (int i = 0; i < n; i++) {
                 count[a[i].charAt(d) + 1]++;
             }
 
             // compute cumulates
-            for (int r = 0; r < R; r++) {
+            for (int r = 0; r < Radix; r++) {
                 count[r + 1] += count[r];
             }
 
@@ -69,3 +72,4 @@ public class LSD {
         return result;
     }
 }
+

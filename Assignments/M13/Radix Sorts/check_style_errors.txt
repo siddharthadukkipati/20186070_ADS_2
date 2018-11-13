@@ -1,11 +1,6 @@
 Starting audit...
-[ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M13\Radix Sorts\LSD.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M13\Radix Sorts\LSD.java:1: Missing a Javadoc comment. [JavadocType]
-[ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M13\Radix Sorts\LSD.java:10: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M13\Radix Sorts\LSD.java:28:13: Name 'R' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
-Audit done.
-Checkstyle ends with 4 errors.
-Starting audit...
-[ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M13\Radix Sorts\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M13\Radix Sorts\LSD.java:31:13: Name 'Radix' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
 Audit done.
 Checkstyle ends with 1 errors.
+Starting audit...
+Audit done.
