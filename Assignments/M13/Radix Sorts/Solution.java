@@ -7,7 +7,7 @@ final class Solution {
      * default constructor.
      */
     private Solution() {
-    	//unused..
+        //unused..
     }
     /**
      * main method.

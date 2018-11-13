@@ -1,24 +1,11 @@
 Starting audit...
 [ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M13\Radix Sorts\LSD.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M13\Radix Sorts\LSD.java:1: Missing a Javadoc comment. [JavadocType]
-[ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M13\Radix Sorts\LSD.java:2:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M13\Radix Sorts\LSD.java:5:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M13\Radix Sorts\LSD.java:6:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M13\Radix Sorts\LSD.java:6:28: Variable 'check' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M13\Radix Sorts\LSD.java:14:29: Parameter a should be final. [FinalParameters]
-[ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M13\Radix Sorts\LSD.java:14:41: Parameter w should be final. [FinalParameters]
-[ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M13\Radix Sorts\LSD.java:17:13: Name 'R' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
-[ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M13\Radix Sorts\LSD.java:17:17: '256' is a magic number. [MagicNumber]
-[ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M13\Radix Sorts\LSD.java:20:23: '-' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M13\Radix Sorts\LSD.java:20:24: '-' is not followed by whitespace. [WhitespaceAround]
-[ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M13\Radix Sorts\LSD.java:24:36: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M13\Radix Sorts\LSD.java:24:37: '+' is not followed by whitespace. [WhitespaceAround]
-[ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M13\Radix Sorts\LSD.java:31:24: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M13\Radix Sorts\LSD.java:31:25: '+' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M13\Radix Sorts\LSD.java:10: Line has trailing spaces. [RegexpSingleline]
+[ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M13\Radix Sorts\LSD.java:28:13: Name 'R' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
 Audit done.
-Checkstyle ends with 16 errors.
+Checkstyle ends with 4 errors.
 Starting audit...
 [ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M13\Radix Sorts\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\Siddhartha\Desktop\MSIT\1st year\ADS-2\20186070_ADS_2\Assignments\M13\Radix Sorts\Solution.java:10:5: File contains tab characters (this is the first instance). [FileTabCharacter]
 Audit done.
-Checkstyle ends with 2 errors.
+Checkstyle ends with 1 errors.

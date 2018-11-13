@@ -1,9 +1,19 @@
 public class LSD {
+    /**
+     * { var_description }.
+     */
     private static final int BITS_PER_BYTE = 8;
 
-    // do not instantiate
-    public LSD() { }
-    public static String[] check;
+    /**
+     * Constructs the object.
+     */
+    public LSD() { 
+        //unused...
+    }
+    /**
+     * { var_description }.
+     */
+    private static String[] check;
 
    /**
      * Rearranges the array of W-character strings in ascending order.
@@ -11,24 +21,25 @@ public class LSD {
      * @param a the array to be sorted
      * @param w the number of characters per string
      */
-    public static void sort(String[] a, int w) {
+    public static void sort(final String[] a, final int w) {
         int n = a.length;
+        final int two = 256;
         check = a;
-        int R = 256;   // extend ASCII alphabet size
+        int R = two;   // extend ASCII alphabet size
         String[] aux = new String[n];
 
-        for (int d = w-1; d >= 0; d--) {
+        for (int d = w - 1; d >= 0; d--) {
             // sort by key-indexed counting on dth character
 
             // compute frequency counts
-            int[] count = new int[R+1];
+            int[] count = new int[R + 1];
             for (int i = 0; i < n; i++) {
                 count[a[i].charAt(d) + 1]++;
             }
 
             // compute cumulates
             for (int r = 0; r < R; r++) {
-                count[r+1] += count[r];
+                count[r + 1] += count[r];
             }
 
             // move data
