@@ -97,6 +97,7 @@ public class Solution {
 				if (st.contains(wrd)) {
 					int wordCount = st.get(wrd);
 					wordCount += 1;
+					st.put(wrd, wordCount);
 				} else {
 					st.put(wrd, 1);
 				}
