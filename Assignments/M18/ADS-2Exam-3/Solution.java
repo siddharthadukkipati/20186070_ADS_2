@@ -217,3 +217,4 @@ class T9 {
         return getSuggestions(potentialWords(t9Signature), k);
     }
 }
+
