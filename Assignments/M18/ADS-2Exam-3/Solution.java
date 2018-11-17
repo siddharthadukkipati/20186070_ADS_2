@@ -89,14 +89,15 @@ public class Solution {
 		BinarySearchST<String, Integer>  st = new BinarySearchST<String, Integer>();
 		// your code goes here
 		String[] dict = toReadFile(file);
-		for (String line : dict) {
-			String[] words = line.split(" ");
-			for (String word : words) {
-				if (st.contains(word)) {
-					int countWord = st.get(word);
+		for (String word : dict) {
+			word.toLowerCase();
+			String[] words = word.split(" ");
+			for (String wrd : words) {
+				if (st.contains(wrd)) {
+					int countWord = st.get(wrd);
 					countWord = countWord + 1;
 				} else {
-					st.put(word, 1);
+					st.put(wrd, 1);
 				}
 			}
 		}
