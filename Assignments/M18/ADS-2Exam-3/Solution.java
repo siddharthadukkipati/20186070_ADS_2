@@ -1,14 +1,29 @@
+/**
+ * { item_description }.
+ */
 import java.util.Scanner;
+/**
+ * { item_description }.
+ */
 import java.util.TreeSet;
-
-
+/**
+ * Class for solution.
+ */
 public class Solution {
-
-	// Don't modify this method.
-	public static void main(String[] args) {
+	/**
+	 * Constructs the object.
+	 */
+	Solution() {
+		//unused.
+	}
+	/**
+	 * { function_description }.
+	 *
+	 * @param      args  The arguments
+	 */
+	public static void main(final String[] args) {
 		Scanner scan = new Scanner(System.in);
 		String cases = scan.nextLine();
-
 		switch (cases) {
 		case "loadDictionary":
 			// input000.txt and output000.txt
@@ -18,7 +33,6 @@ public class Solution {
 				System.out.println(hash.get(key));
 			}
 			break;
-
 		case "getAllPrefixes":
 			// input001.txt and output001.txt
 			T9 t9 = new T9(loadDictionary("/Files/t9.csv"));
@@ -29,7 +43,6 @@ public class Solution {
 				}
 			}
 			break;
-
 		case "potentialWords":
 			// input002.txt and output002.txt
 			t9 = new T9(loadDictionary("/Files/t9.csv"));
@@ -45,7 +58,6 @@ public class Solution {
 				System.out.println("No valid words found.");
 			}
 			break;
-
 		case "topK":
 			// input003.txt and output003.txt
 			t9 = new T9(loadDictionary("/Files/t9.csv"));
@@ -60,7 +72,6 @@ public class Solution {
 			}
 
 			break;
-
 		case "t9Signature":
 			// input004.txt and output004.txt
 			t9 = new T9(loadDictionary("/Files/t9.csv"));
@@ -73,19 +84,29 @@ public class Solution {
 				}
 			}
 			break;
-
 		default:
 			break;
-
 		}
 	}
-
 	// Don't modify this method.
+	/**
+	 * { function_description }.
+	 *
+	 * @param      file  The file
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
 	public static String[] toReadFile(String file) {
 		In in = new In(file);
 		return in.readAllStrings();
 	}
-
+	/**
+	 * Loads a dictionary.
+	 *
+	 * @param      file  The file
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
 	public static BinarySearchST<String, Integer> loadDictionary(String file) {
 		BinarySearchST<String, Integer>  st = new BinarySearchST<String, Integer>();
 		// your code goes here
@@ -109,9 +130,19 @@ public class Solution {
 	}
 
 }
-
+/**
+ * Class for t 9.
+ */
 class T9 {
+	/**
+	 * { var_description }.
+	 */
 	private TST<Integer> tstObject;
+	/**
+	 * Constructs the object.
+	 *
+	 * @param      st    { parameter_description }
+	 */
 	public T9(BinarySearchST<String, Integer> st) {
 		// your code goes here
 		tstObject = new TST<Integer>();
@@ -119,19 +150,38 @@ class T9 {
 			tstObject.put(wrd, st.get(wrd));
 		}
 	}
-
 	// get all the prefixes that match with given prefix.
+
+	/**
+	 * Gets all words.
+	 *
+	 * @param      prefix  The prefix
+	 *
+	 * @return     All words.
+	 */
 	public Iterable<String> getAllWords(String prefix) {
 		// your code goes here
 		return tstObject.keysWithPrefix(prefix);
 	}
-
+	/**
+	 * { function_description }.
+	 *
+	 * @param      t9Signature  The t 9 signature
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
 	public Iterable<String> potentialWords(String t9Signature) {
 		// your code goes here
 		return null;
 	}
-
-	// return all possibilities(words), find top k with highest frequency.
+	/**
+	 * Gets the suggestions.
+	 *
+	 * @param      words  The words
+	 * @param      k      { parameter_description }
+	 *
+	 * @return     The suggestions.
+	 */
 	public Iterable<String> getSuggestions(Iterable<String> words, int k) {
 		// your code goes here
 		// return null;
@@ -150,9 +200,15 @@ class T9 {
 		 }
 		return treeSetObj;
 	}
-
 	// final output
-	// Don't modify this method.
+	/**
+	 * { function_description }.
+	 *
+	 * @param      t9Signature  The t 9 signature
+	 * @param      k            { parameter_description }
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
 	public Iterable<String> t9(String t9Signature, int k) {
 		return getSuggestions(potentialWords(t9Signature), k);
 	}
