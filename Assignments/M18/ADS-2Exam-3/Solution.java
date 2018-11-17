@@ -90,12 +90,13 @@ public class Solution {
 		// your code goes here
 		String[] dict = toReadFile(file);
 		for (String word : dict) {
-			word.toLowerCase();
+			// word.toLowerCase();
 			String[] words = word.split(" ");
+			word.toLowerCase();
 			for (String wrd : words) {
 				if (st.contains(wrd)) {
-					int countWord = st.get(wrd);
-					countWord = countWord + 1;
+					int wordCount = st.get(wrd);
+					wordCount += 1;
 				} else {
 					st.put(wrd, 1);
 				}
