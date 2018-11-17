@@ -93,7 +93,7 @@ public class Solution {
 			// word.toLowerCase();
 			String[] words = word.split(" ");
 			for (String wrd : words) {
-				wrd.toLowerCase();
+				wrd = wrd.toLowerCase();
 				if (st.contains(wrd)) {
 					int wordCount = st.get(wrd);
 					wordCount += 1;
