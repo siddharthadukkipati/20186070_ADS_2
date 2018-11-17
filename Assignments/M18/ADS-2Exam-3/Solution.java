@@ -115,14 +115,14 @@ class T9 {
 		// your code goes here
 		tstObject = new TST<Integer>();
 		for (String wrd : st.keys()) {
-			st.put(wrd, st.get(wrd));
+			tstObject.put(wrd, st.get(wrd));
 		}
 	}
 
 	// get all the prefixes that match with given prefix.
 	public Iterable<String> getAllWords(String prefix) {
 		// your code goes here
-		return null;
+		return tstObject.keysWithPrefix(prefix);
 	}
 
 	public Iterable<String> potentialWords(String t9Signature) {
