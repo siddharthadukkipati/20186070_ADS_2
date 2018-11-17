@@ -92,8 +92,8 @@ public class Solution {
 		for (String word : dict) {
 			// word.toLowerCase();
 			String[] words = word.split(" ");
-			word.toLowerCase();
 			for (String wrd : words) {
+				word.toLowerCase();
 				if (st.contains(wrd)) {
 					int wordCount = st.get(wrd);
 					wordCount += 1;
