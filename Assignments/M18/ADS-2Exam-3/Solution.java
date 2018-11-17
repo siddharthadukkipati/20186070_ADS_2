@@ -9,7 +9,7 @@ import java.util.TreeSet;
 /**
  * Class for solution.
  */
-public class Solution {
+public final class Solution {
     /**
      * Constructs the object.
      */
@@ -146,7 +146,7 @@ class T9 {
      *
      * @param      st    { parameter_description }
      */
-    T9(BinarySearchST<String, Integer> st) {
+    T9(final BinarySearchST<String, Integer> st) {
         // your code goes here
         tstObject = new TST<Integer>();
         for (String wrd : st.keys()) {
@@ -185,7 +185,8 @@ class T9 {
      *
      * @return     The suggestions.
      */
-    public Iterable<String> getSuggestions(final Iterable<String> words, final int k) {
+    public Iterable<String>
+    getSuggestions(final Iterable<String> words, final int k) {
         // your code goes here
         // return null;
         TreeSet<String> treeSetObj = new TreeSet<>();
