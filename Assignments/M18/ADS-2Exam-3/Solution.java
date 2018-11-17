@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.TreeSet;
 
 
 public class Solution {
@@ -133,7 +134,21 @@ class T9 {
 	// return all possibilities(words), find top k with highest frequency.
 	public Iterable<String> getSuggestions(Iterable<String> words, int k) {
 		// your code goes here
-		return null;
+		// return null;
+		TreeSet<String> treeSetObj = new TreeSet<>();
+		MaxPQ<Integer> maxObject = new MaxPQ<>();
+		 for (String wrd : words) {
+		 	maxObject.insert(tstObject.get(wrd));
+		 	}
+		 for (int i = 0; i < k; i++) {
+		 	int temp = maxObject.delMax();
+		 		for (String wrd : words) {
+		 			if (temp == tstObject.get(wrd)) {
+		 				treeSetObj.add(wrd);
+		 			}
+		 		}
+		 }
+		return treeSetObj;
 	}
 
 	// final output
