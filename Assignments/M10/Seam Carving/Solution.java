@@ -1,9 +1,27 @@
+/**
+ * { item_description }.
+ */
 import java.util.Scanner;
+/**
+ * { item_description }.
+ */
 import java.util.Arrays;
-
+/**
+ * Class for solution.
+ */
 public class Solution {
-
-    public static void printEnergies(String fileName) {
+	/**
+	 * Constructs the object.
+	 */
+	Solution() {
+		//unused.
+	}
+	/**
+	 * { function_description }.
+	 *
+	 * @param      fileName  The file name
+	 */
+    public static void printEnergies(final String fileName) {
         try {
             Picture picture = new Picture(fileName);
             StdOut.printf("image is %d pixels wide by %d pixels high.\n", picture.width(), picture.height());
@@ -21,8 +39,14 @@ public class Solution {
             System.out.println(ex.getMessage());
         }
     }
-
-    public static void printSeam(SeamCarver carver, int[] seam, boolean direction) {
+    /**
+     * { function_description }.
+     *
+     * @param      carver     The carver
+     * @param      seam       The seam
+     * @param      direction  The direction
+     */
+    public static void printSeam(final SeamCarver carver, final int[] seam, final boolean direction) {
         double totalSeamEnergy = 0.0;
 
         for (int row = 0; row < carver.height(); row++) {
@@ -43,7 +67,11 @@ public class Solution {
         StdOut.println();
         StdOut.println();
     }
-
+    /**
+     * { function_description }.
+     *
+     * @param      args  The arguments
+     */
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         String cases = scan.nextLine();
