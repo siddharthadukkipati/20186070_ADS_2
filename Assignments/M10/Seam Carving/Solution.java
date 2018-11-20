@@ -3,7 +3,7 @@ import java.util.Arrays;
 /**
  * Class for solution.
  */
-public class Solution {
+class Solution {
     /**
      * Constructs the object.
      */
@@ -15,7 +15,7 @@ public class Solution {
      *
      * @param      fileName  The file name
      */
-    public static void printEnergies(String fileName) {
+    public static void printEnergies(final String fileName) {
         try {
             Picture picture = new Picture(fileName);
             StdOut.printf("image is %d pixels wide by %d pixels high.\n",
